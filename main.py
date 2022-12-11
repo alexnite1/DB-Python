@@ -15,7 +15,7 @@ class Main(tk.Frame):
         toolbar = tk.Frame(bg='#d7d8e0', bd=2)
         toolbar.pack(side=tk.TOP, fill=tk.X)
 # вкладка и кнопка создания записи
-        self.add_img = tk.PhotoImage(file="btn_icon/add.gif")
+        self.add_img = tk.PhotoImage(file="add.gif")
         btn_open_dialog = tk.Button(toolbar, text='Добавить позицию',
                                     command=self.open_dialog,
                                     bg='#d7d8e0',
@@ -24,7 +24,7 @@ class Main(tk.Frame):
                                     image=self.add_img)
         btn_open_dialog.pack(side=tk.LEFT)
 # вкладка и кнопка редактирования записи
-        self.update_img = tk.PhotoImage(file='btn_icon/update.gif')
+        self.update_img = tk.PhotoImage(file='update.gif')
         btn_edit_dialog = tk.Button(toolbar, text='Редактировать',
                                     bg='#d7d8e0',
                                     bd=0,
@@ -33,7 +33,7 @@ class Main(tk.Frame):
                                     command=self.open_update_dialog)
         btn_edit_dialog.pack(side=tk.LEFT)
 # кнопка удаления записи
-        self.delete_img = tk.PhotoImage(file='btn_icon/delete.gif')
+        self.delete_img = tk.PhotoImage(file='delete.gif')
         btn_delete = tk.Button(toolbar, text='Удалить позицию',
                                bg='#d7d8e0',
                                bd=0,
@@ -42,7 +42,7 @@ class Main(tk.Frame):
                                command=self.delete_records)
         btn_delete.pack(side=tk.LEFT)
 # кнопка поиска записи
-        self.search_img = tk.PhotoImage(file='btn_icon/search.gif')
+        self.search_img = tk.PhotoImage(file='search.gif')
         btn_search = tk.Button(toolbar, text='Поиск',
                                bg='#d7d8e0',
                                bd=0,
@@ -51,7 +51,7 @@ class Main(tk.Frame):
                                command=self.open_search_dialog)
         btn_search.pack(side=tk.LEFT)
 # кнопка обвления записей
-        self.refresh_img = tk.PhotoImage(file='btn_icon/refresh.gif')
+        self.refresh_img = tk.PhotoImage(file='refresh.gif')
         btn_refresh = tk.Button(toolbar, text='Обновить',
                                 bg='#d7d8e0',
                                 bd=0,
